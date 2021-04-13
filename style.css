@@ -1,0 +1,158 @@
+body{
+        
+            background-color:#00adef; //121210
+            background-attachment: fixed;
+            background-size: 100%;
+            overflow:hidden;
+        }
+        
+        .floor {
+            top:85%;
+            width: 200%;
+            height: 12.5%;
+            position:absolute;
+            right:-100%;
+            bottom:0px;
+            z-index:-1;
+            background-repeat: repeat-x;
+        
+        
+        }
+        
+        
+        .squid {
+            background-image: "https://media.giphy.com/media/Sw7MgK69SnwRk7CKtp/giphy.gif";
+            margin: 0px;
+            /*float: left;*/
+            width: 10%;
+            height: 15%;
+            position: absolute;
+            top:50%;
+            right:85%;
+            z-index: 4;
+            animation-name: forward1;
+            animation-duration: 6s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards; 
+            
+        }
+        
+        @keyframes forward1 {
+            from {left: -8%; bottom: 50%;}
+            to {left: 15%; bottom: 50%;}
+        } 
+        
+        .bubble{
+            width: 0%;
+            height: 7%;
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            z-index: 8;
+        
+        }
+        
+        .rightshark {
+            width: 100%;
+            height: 12.5%;
+            position: absolute;
+            left: 50px;
+            bottom: 120px;
+            z-index:1;
+            visibility: hidden;
+        }
+        
+        .shark{
+            
+            height:19%;
+            width:13%;
+            position:absolute;
+            right:0px;
+            top:50%;
+            z-index:6;
+        }
+        
+        .seaweed{
+            height:20%;
+            width:40%;
+            position: absolute;
+            right: 0px;
+            top:75%;
+            z-index:5;
+        }
+        
+        .whale{
+            height:19%;
+            width:13%;
+            top:30%;
+            position:absolute;
+            right: -13%;
+            z-index:6;
+        }
+        
+        .crab{
+            height:0%;
+            width:15%;
+            top:75.6%;
+            position: absolute;
+            right: -13%;
+            z-index:12;
+        }
+        
+        h1 {
+            text-align: center;
+           }    
+
+        
+        h2 {
+          /*  text-align:center;
+            margin-top:10%; */
+            position: absolute;
+            width: 40%;
+            left:20%;
+            top: 50%; 
+            z-index:10;
+            margin:0 auto;
+            font-size:20px;
+            animation-name: showhi;
+            animation-duration:4s;
+            animation-fill-mode:forwards;
+        }
+        
+        @keyframes showhi {
+            0% {visibility: hidden; left: -8%;}
+            49% {visibility: hidden; left: 0%;}
+            50% {visibility: visible; left: 5%;}
+            99% {visibility: visible; left: 10%;}
+            100% {visibility: hidden;  left: 10%;}
+        }
+        
+        h3 {
+           /* text-align:center; */
+            position: absolute;
+            width: 40%;
+            left: 20%;
+            top: 50%; 
+            z-index:10;
+            margin:0 auto;
+            font-size:20px;
+            animation-name: showgame;
+            animation-duration:6s;
+            animation-fill-mode:forwards;
+        }
+        
+        @keyframes showgame {
+            0% {visibility: hidden; }
+            69% {visibility: hidden; }
+            70% {visibility: visible; left: 10%; }
+            99% {visibility: visible; left: 15%; }
+            100% {visibility: hidden;  left: 15%; }
+        }
+        /*h4 {
+         
+            position: absolute;
+            width: 40%;
+            z-index:10;
+            margin: 0 auto;
+            font-size: 20px;
+        }*/
